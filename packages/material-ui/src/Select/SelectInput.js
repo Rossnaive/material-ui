@@ -381,7 +381,7 @@ const SelectInput = React.forwardRef(function SelectInput(props, ref) {
         {/* So the vertical align positioning algorithm kicks in. */}
         {isEmpty(display) ? (
           // eslint-disable-next-line react/no-danger
-          <span dangerouslySetInnerHTML={{ __html: '&#8203;' }} />
+          <span className="notranslate" dangerouslySetInnerHTML={{ __html: '&#8203;' }} />
         ) : (
           display
         )}
